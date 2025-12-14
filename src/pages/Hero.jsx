@@ -102,16 +102,15 @@ const Hero = () => {
           {/* ASCII Art Title */}
           <div className="w-full max-w-5xl mb-6 animate-fade-in-up overflow-x-auto">
             <pre 
-              className="text-[0.4rem] sm:text-[0.6rem] md:text-sm lg:text-base leading-tight text-center font-bold"
+              className="text-[0.8rem] sm:text-[0.8rem] md:text-large lg:text-2xl leading-tight text-center font-bold"
               style={{ color: '#8B6AAF' }}
             >
-{`
-██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗  ██╗███████╗██████╗ 
-██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║  ██║██╔════╝██╔══██╗
-███████║███████║██║     █████╔╝ ███████║█████╗  ██████╔╝
-██╔══██║██╔══██║██║     ██╔═██╗ ██╔══██║██╔══╝  ██╔══██╗
-██║  ██║██║  ██║╚██████╗██║  ██╗██║  ██║███████╗██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+{`                                            
+                                            
+██  ██  ▄▄▄   ▄▄▄▄ ▄▄ ▄▄ ██  ██ ▄▄▄▄▄ ▄▄▄▄  
+██████ ██▀██ ██▀▀▀ ██▄█▀ ██████ ██▄▄  ██▄█▄ 
+██  ██ ██▀██ ▀████ ██ ██ ██  ██ ██▄▄▄ ██ ██ 
+  
 `}
             </pre>
           </div>
@@ -262,40 +261,48 @@ const Hero = () => {
           </div>
 
           {/* Register Section */}
-          <div className="w-full max-w-5xl animate-fade-in" style={{ animationDelay: '0.9s' }}>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="font-bold" style={{ color: '#5A8A7A' }}>$</span>
-              <span style={{ color: '#6A5A7A' }}>hackher</span>
-              <span style={{ color: '#D4789C' }}>--register</span>
-              <span style={{ color: '#6A9BC3' }}>--now</span>
-            </div>
-            
-            <button 
-              className="group w-full py-5 rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
-              style={{ 
-                background: 'linear-gradient(135deg, #DBCDF0 0%, #F2C6DE 50%, #C9E4DE 100%)',
-                border: '2px solid #C5B5E0'
-              }}
-            >
-              <span className="flex items-center justify-center gap-4 text-base md:text-lg font-bold">
-                <span style={{ color: '#5A8A7A' }}>{'>'}</span>
-                <span style={{ color:  '#6A4A7A' }}>Register_Now()</span>
-                <span 
-                  className="transition-transform duration-300 group-hover: translate-x-2"
-                  style={{ color: '#D4789C' }}
-                >
-                  →
-                </span>
-              </span>
-            </button>
-            
-            {/* Success message preview */}
-            <div className="mt-4 text-sm" style={{ color: '#5A8A7A' }}>
-              <span style={{ color: '#6A5A7A' }}>{'// '}</span>
-              <span>Ready to empower women in tech... </span>
-              <span className="animate-blink" style={{ color: '#D4789C' }}>_</span>
-            </div>
-          </div>
+<div className="w-full max-w-5xl animate-fade-in" style={{ animationDelay: '0.9s' }}>
+  <div className="flex items-center gap-3 mb-4">
+    <span className="font-bold" style={{ color: '#5A8A7A' }}>$</span>
+    <span style={{ color: '#6A5A7A' }}>hackher</span>
+    <span style={{ color: '#D4789C' }}>--register</span>
+    <span style={{ color: '#6A9BC3' }}>--now</span>
+  </div>
+
+  <a
+    href="https://forms.gle/5F6S3r9mC1mKcGJC6"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block"
+  >
+    <button 
+      className="group w-full py-5 rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-xl"
+      style={{ 
+        background: 'linear-gradient(135deg, #DBCDF0 0%, #F2C6DE 50%, #C9E4DE 100%)',
+        border: '2px solid #C5B5E0'
+      }}
+    >
+      <span className="flex items-center justify-center gap-4 text-base md:text-lg font-bold">
+        <span style={{ color: '#5A8A7A' }}>{'>'}</span>
+        <span style={{ color: '#6A4A7A' }}>Register_Now()</span>
+        <span 
+          className="transition-transform duration-300 group-hover:translate-x-2"
+          style={{ color: '#D4789C' }}
+        >
+          →
+        </span>
+      </span>
+    </button>
+  </a>
+
+  {/* Success message preview */}
+  <div className="mt-4 text-sm" style={{ color: '#5A8A7A' }}>
+    <span style={{ color: '#6A5A7A' }}>{'// '}</span>
+    <span>Ready to empower women in tech... </span>
+    <span className="animate-blink" style={{ color: '#D4789C' }}>_</span>
+  </div>
+</div>
+
 
           {/* Footer */}
           <div className="w-full max-w-5xl mt-12 pt-6 border-t-2 animate-fade-in" style={{ borderColor: '#DBCDF0', animationDelay: '1. 1s' }}>

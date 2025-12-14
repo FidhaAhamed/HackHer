@@ -24,9 +24,9 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'home', path:  '/' },
-    { name: 'about', path: '/about' },
-    { name: 'tracks', path: '/tracks' },
-    { name: 'timeline', path: '/timeline' }
+    { name: 'about', path: '#about' },
+    { name: 'tracks', path: '#tracks' },
+    { name: 'timeline', path: '#timeline' }
   ]
 
   return (
@@ -49,33 +49,15 @@ const Navbar = () => {
               {/* HackHer Logo Placeholder */}
               <a href="/" className="flex items-center">
                 {/* REPLACE THIS DIV WITH YOUR HACKHER LOGO */}
-                {/* <img src="/path-to-hackher-logo.png" alt="HackHer" className="h-10 w-auto" /> */}
-                <div 
-                  className="flex items-center justify-center h-10 px-3 rounded-lg text-xs font-medium"
-                  style={{ 
-                    backgroundColor: 'rgba(242, 198, 222, 0.3)',
-                    border: '1px dashed #D4789C',
-                    color:  '#D4789C'
-                  }}
-                >
-                  HACKHER LOGO
-                </div>
+                <img src="/hackher 1.png" alt="HackHer" className="h-14 w-auto" />
+                
               </a>
 
               {/* IEEE MACE Logo - Shows on mobile, hidden on desktop (will show on right side) */}
               <a href="/" className="flex lg:hidden items-center">
                 {/* REPLACE THIS DIV WITH YOUR IEEE MACE LOGO */}
-                {/* <img src="/path-to-ieee-mace-logo.png" alt="IEEE MACE" className="h-10 w-auto" /> */}
-                <div 
-                  className="flex items-center justify-center h-10 px-3 rounded-lg text-xs font-medium"
-                  style={{ 
-                    backgroundColor: 'rgba(219, 205, 240, 0.3)',
-                    border: '1px dashed #9B7BB8',
-                    color:  '#8B6AAF'
-                  }}
-                >
-                  IEEE MACE
-                </div>
+                <img src="/logo ieee.png" alt="IEEE MACE" className="h-14 w-auto" /> 
+                
               </a>
             </div>
 
@@ -108,26 +90,19 @@ const Navbar = () => {
               {/* IEEE MACE Logo - Desktop only */}
               <a href="/" className="hidden lg:flex items-center">
                 {/* REPLACE THIS DIV WITH YOUR IEEE MACE LOGO */}
-                {/* <img src="/path-to-ieee-mace-logo. png" alt="IEEE MACE" className="h-10 w-auto" /> */}
-                <div 
-                  className="flex items-center justify-center h-10 px-3 rounded-lg text-xs font-medium"
-                  style={{ 
-                    backgroundColor: 'rgba(219, 205, 240, 0.3)',
-                    border:  '1px dashed #9B7BB8',
-                    color: '#8B6AAF'
-                  }}
-                >
-                  IEEE MACE LOGO
-                </div>
+                <img src="/logo ieee.png" alt="IEEE MACE" className="h-10 w-auto" />
+                
               </a>
 
               {/* Divider - Desktop only */}
-              <div className="hidden lg:block w-[1px] h-8" style={{ backgroundColor:  '#DBCDF0' }} />
+              <div className="hidden lg:block w-px h-8" style={{ backgroundColor:  '#DBCDF0' }} />
 
               {/* Register Button - Desktop only */}
               <a 
-                href="/register"
-                className="hidden lg:flex group items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105"
+                href="https://forms.gle/5F6S3r9mC1mKcGJC6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden lg:flex group items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:scale-105 "
                 style={{ 
                   background: 'linear-gradient(135deg, #DBCDF0 0%, #F2C6DE 100%)',
                   border: '1px solid #C5B5E0'
