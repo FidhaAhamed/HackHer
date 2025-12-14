@@ -3,6 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section
+      id='about'
       className="relative w-full py-20 px-6 md:px-12 lg:px-24 font-mono"
       style={{
        background: "linear-gradient(180deg, #C6DEF1 0%, #DBCDF0 50%, #C6DEF1 100%)",

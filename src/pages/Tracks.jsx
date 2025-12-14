@@ -34,25 +34,26 @@ const Tracks = () => {
 
   return (
     <div 
+    id='tracks'
       className="relative w-full py-20 px-6 md:px-12 lg:px-24 font-mono"
       style={{ background: 'linear-gradient(180deg, #C6DEF1 0%, #DBCDF0 50%, #F2C6DE 100%)' }}
     >
       <div className="relative z-10 max-w-5xl mx-auto">
         
         {/* Section Header */}
-        <div className="mb-10">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="font-bold" style={{ color: '#5A8A7A' }}>$</span>
-            <span style={{ color: '#6A5A7A' }}>ls</span>
-            <span style={{ color: '#9B7BB8' }}>./tracks</span>
-          </div>
-          
+        <div className="text-center mb-12">
+          <p className="text-sm font-semibold uppercase tracking-widest mb-2" style={{ color: '#D4789C' }}>
+            Tracks
+          </p>
           <h2 
-            className="text-3xl md:text-4xl font-bold"
+            className="text-3xl md:text-4xl font-bold mb-3"
             style={{ color: '#8B6AAF' }}
           >
-            {'// Hackathon Tracks'}
+            {'// hackathon tracks'}
           </h2>
+          <p className="text-lg md:text-xl" style={{ color: '#6A5A7A' }}>
+            From opening circle to demo night, here's a sneak peek at what your HackHer weekend will look like.
+          </p>
         </div>
 
         {/* Tracks Grid */}

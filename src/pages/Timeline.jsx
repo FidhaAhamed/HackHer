@@ -75,6 +75,7 @@ const keyDates = [
 
   return (
     <div 
+    id = 'timeline'
       className="relative w-full py-20 px-6 md:px-12 lg:px-24 font-mono"
 style={{
   background: 'linear-gradient(180deg, #F2C6DE 0%, #FAEDCB 50%, #C6DEF1 100%)'

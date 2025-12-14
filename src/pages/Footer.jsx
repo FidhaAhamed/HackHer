@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer
       className="relative w-full min-h-[90vh] flex items-center justify-center
-             bg-gradient-to-b from-[#f7f0ff] to-[#eae2ff]
+             bg-linear-to-b from-[#f7f0ff] to-[#eae2ff]
              text-gray-800 overflow-hidden"
   style={{ fontFamily: '"Space Mono", monospace' }}
     >
@@ -75,7 +75,7 @@ const Footer = () => {
             { icon: FaXTwitter, url: "https://x.com/ieeemace/" },
             { icon: FaLinkedinIn, url: "https://www.linkedin.com/company/ieeemace/" },
             { icon: FaGlobe, url: "https://www.ieeemace.org/" },
-            { icon: FaWhatsapp, url: "https://chat.whatsapp.com/CMdvATPhkEo5gpfjL0gGlA?mode=r_c" },
+            { icon: FaWhatsapp, url: "https://chat.whatsapp.com/BIakPOt0gHkLbksO6RPIcn?mode=hqrc" },
           ].map(({ icon: Icon, url }, index) => (
             <a
               key={index}
@@ -84,26 +84,25 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="p-3 rounded-full hover:scale-110 transition-transform"
             >
-              <Icon className="text-gray-700 text-3xl hover:text-purple-700 transition-colors" />
+              <Icon className="text-gray-700 text-2xl md:text-3xl hover:text-purple-700 transition-colors" />
             </a>
           ))}
         </div>
 
         {/* Title */}
         {/* Pixel Title */}
-<pre
-  className="text-purple-500 text-[22px] md:text-[32px] leading-none
-             font-mono tracking-wide text-center mb-4 select-none"
->
-{`
-██╗  ██╗ █████╗  ██████╗ ██╗  ██╗██╗  ██╗███████╗██████╗
-██║  ██║██╔══██╗██╔════╝ ██║ ██╔╝██║  ██║██╔════╝██╔══██╗
-███████║███████║██║      █████╔╝ ███████║█████╗  ██████╔╝
-██╔══██║██╔══██║██║      ██╔═██╗ ██╔══██║██╔══╝  ██╔══██╗
-██║  ██║██║  ██║╚██████╗ ██║  ██╗██║  ██║███████╗██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+<pre 
+              className="text-[0.8rem] sm:text-[0.8rem] md:text-large lg:text-2xl leading-tight text-center font-bold"
+              style={{ color: '#8B6AAF' }}
+            >
+{`                                            
+                                            
+██  ██  ▄▄▄   ▄▄▄▄ ▄▄ ▄▄ ██  ██ ▄▄▄▄▄ ▄▄▄▄  
+██████ ██▀██ ██▀▀▀ ██▄█▀ ██████ ██▄▄  ██▄█▄ 
+██  ██ ██▀██ ▀████ ██ ██ ██  ██ ██▄▄▄ ██ ██ 
+  
 `}
-</pre>
+            </pre>
 
 
 
