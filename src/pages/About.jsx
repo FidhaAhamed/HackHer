@@ -88,3 +88,4 @@ and get mentored by industry leaders.
 }
 
 export default About
+
